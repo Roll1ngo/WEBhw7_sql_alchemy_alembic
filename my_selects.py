@@ -155,7 +155,7 @@ def select_eleven(teacher_id: int, student_id: id):
     return result
 
 
-def select_twelve(group_id: int, discipline_id: int) -> tuple:
+def select_twelve(group_id: int, discipline_id: int):
     """Оцінки студентів у певній групі з певного предмета на останньому занятті."""
 
     date_of_last_lesson_row = session.query(Grade.date_of).select_from(Grade) \
